@@ -1,0 +1,39 @@
+$black: #000;
+$white: #fff;
+$light-grey: #B6B6B6;
+$light-pink: #BFA1B3;
+
+$font-family: 'Roboto', sans-serif;;
+$font-fancy:  'Playfair Display', serif;
+
+// mobile
+$base-font-size: 18px;
+$base-font-h1-mobile: 3rem;
+$base-font-h2-mobile: 2rem;
+
+// tablet
+$base-font-size: 18px;
+$base-font-h1-tablet: 10rem;
+$base-font-h2-tablet: 3rem;
+// desktop
+$base-font-size: 18px;
+$base-font-h1-desktop: 10rem;
+$base-font-h2-desktop: 3rem;
+
+
+// mobile
+$line-height-h1-mobile: 3.5rem;
+$line-height-h2-mobile: 3rem;
+$line-height-p-mobile: 2rem;
+// tablet
+$line-height-h1-tablet: 11rem;
+$line-height-h2-tablet: 4rem;
+$line-height-p-tablet: 2rem;
+// desktop
+$line-height-h1-desktop: 11rem;
+$line-height-h2-desktop: 4rem;
+$line-height-p-desktop: 2rem;
+
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1020px;

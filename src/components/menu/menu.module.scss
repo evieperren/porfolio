@@ -1,0 +1,28 @@
+@import '../../assets/styles/base.scss';
+
+nav {
+  width: 100%;
+}
+
+.list {
+  margin: 0;
+  padding: 0 10px 0 ;
+  display: flex;
+  justify-content: flex-end;
+
+  li {
+    display: inline-block;
+    margin: 10px;
+
+    a {
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        color: $light-grey;
+        padding-bottom: 5px;
+        border-bottom: 2px solid $light-grey;
+      }
+    }
+  }
+}

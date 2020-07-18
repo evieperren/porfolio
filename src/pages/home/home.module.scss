@@ -1,0 +1,115 @@
+@import '../../assets/styles/base.scss';
+
+.parallax {
+  background-image: url('../../assets/imgs/black-img.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  z-index: 9999;
+  width: 100%;
+  position: relative;
+  
+  .content {
+    padding: 0 20px;
+
+    h1 {
+      color: $white;
+      font-size: $base-font-h1-mobile;
+      font-family: $font-fancy;
+      margin: 0;
+      font-weight: 100;
+      line-height: $line-height-h1-mobile;
+  
+      & span {
+        font-weight: bold;
+        display: block;
+      }
+    }
+    p {
+      color: $white;
+      width: 100%;
+      padding-bottom: 50px;
+      line-height: $line-height-p-mobile;
+    }
+  }
+}
+.showcase {
+  .grid {
+    &__two_cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 0 20px;
+  
+      h2 {
+        margin: auto;
+        font-size: $base-font-h2-mobile;
+        color: $light-pink;
+        line-height: $line-height-h2-mobile;
+        text-align: center;
+      }
+      p {
+        line-height: $line-height-p-mobile;
+      }
+    }
+    &__single_card {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 30px 0;
+
+      img {
+        width: 300px;
+        margin: auto;
+      }
+    }
+  }
+}
+@media only screen and (min-width: $breakpoint-tablet){
+  .parallax {
+    
+    .content {
+      padding: 0 50px;
+      h1 {
+        font-size: $base-font-h1-desktop;
+        line-height: $line-height-h1-desktop;
+      }
+      p {
+        width: 35%;
+        padding-bottom: 50px;
+        line-height: $line-height-p-desktop;
+      }
+    }
+  }
+  
+  .showcase {
+  
+    .grid {
+      display: grid;
+  
+      &__two_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        h2 {
+          font-size: $base-font-h2-desktop;
+          line-height: $line-height-h2-desktop;
+          text-align: left;
+        }
+        p {
+          width: 80%;
+          line-height: $line-height-p-desktop;
+        }
+      }
+      &__single_card {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 30px 0;
+  
+        img {
+          width: 800px;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ import About from '../about/about'
 import Contact from '../contact/contact'
 import { CurrentPageContext } from '../../context/currentPageContext'
 import { BackPathContext } from '../../context/backPathContext'
+import styles from './layout.module.scss'
 
 const Layout = () => {
   const [currentPage, setCurrentPage] = useState(null)
