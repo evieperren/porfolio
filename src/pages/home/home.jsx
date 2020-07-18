@@ -3,6 +3,9 @@ import Menu from '../../components/menu/menu'
 import { CurrentPageContext } from '../../context/currentPageContext'
 import styles from './home.module.scss'
 import hr_desktop from '../../assets/imgs/hr-desktop.png'
+import hr_mobile_search from '../../assets/imgs/hr-mobile-search.png'
+import hr_mobile_home from '../../assets/imgs/hr-mobile-home.png'
+import hr_mobile_register from '../../assets/imgs/hr-mobile-register.png'
 
 const Home = () => {
   const {setCurrentPage} = useContext(CurrentPageContext)
@@ -24,7 +27,7 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.showcase}>
-        <div className={styles.grid__two_cards}>
+        <div className={styles.grid__two_cards__even}>
           <h2>FRONT END <br/> SOFTWARE DEVELOPER</h2>
           <p>Web development is a passion of mine as it gives me the ability to plan, structure and implement over a full-scale project. I enjoy challenging myself with complex projects whilst setting myself strict deadlines to adhere to. 
 
@@ -35,6 +38,17 @@ const Home = () => {
         </div>
         <div className={styles.grid__single_card}>
           <img src={hr_desktop} alt="image of work"/>
+          <caption>Internal website used by staff to start a connection and share skills
+          </caption>
+        </div>
+        <div className={styles.grid__two_cards__right}>
+          <div>
+            <img src={hr_mobile_search} alt="image of work"/>
+            <img src={hr_mobile_home} alt="image of work"/>
+          </div>
+          <div>
+            Text
+          </div>
         </div>
       </div>
 

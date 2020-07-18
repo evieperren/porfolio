@@ -37,19 +37,22 @@
 .showcase {
   .grid {
     &__two_cards {
-      display: grid;
-      grid-template-columns: 1fr;
-      padding: 0 20px;
-  
-      h2 {
-        margin: auto;
-        font-size: $base-font-h2-mobile;
-        color: $light-pink;
-        line-height: $line-height-h2-mobile;
-        text-align: center;
-      }
-      p {
-        line-height: $line-height-p-mobile;
+
+      &__even {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    
+        h2 {
+          margin: auto;
+          font-size: $base-font-h2-mobile;
+          color: $light-pink;
+          line-height: $line-height-h2-mobile;
+          text-align: center;
+        }
+        p {
+          line-height: $line-height-p-mobile;
+        }
       }
     }
     &__single_card {
@@ -61,6 +64,13 @@
         width: 300px;
         margin: auto;
       }
+      caption {
+        font-style: italic;
+      }
+    }
+    &__three_cards{
+      display: grid;
+      grid-template-columns: 1fr;
     }
   }
 }
@@ -82,26 +92,31 @@
   }
   
   .showcase {
-  
     .grid {
-      display: grid;
-  
       &__two_cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    
-        h2 {
-          font-size: $base-font-h2-desktop;
-          line-height: $line-height-h2-desktop;
-          text-align: left;
+        &__even {
+          grid-template-columns: 1fr 1fr;
+      
+          & h2 {
+            font-size: $base-font-h2-desktop;
+            line-height: $line-height-h2-desktop;
+            text-align: left;
+          }
+          p {
+            width: 80%;
+            line-height: $line-height-p-desktop;
+          }
         }
-        p {
-          width: 80%;
-          line-height: $line-height-p-desktop;
+        &__right{
+          grid-template-columns: 1fr 2fr;
+
+          img {
+            width: 175px;
+            margin: auto;
+          }
         }
       }
       &__single_card {
-        display: grid;
         grid-template-columns: 1fr;
         padding: 30px 0;
   
